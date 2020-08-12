@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".home">
+
+    <ImageView
+        android:id="@+id/img1_IV_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/tic_tac_toe" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player_1 Name:"
+            android:textStyle="bold"
+            android:textColor="#ECE188"
+            android:textSize="30dp"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:id="@+id/Name1_EDT_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player_2 Name:"
+            android:textStyle="bold"
+            android:textColor="#ECE188"
+            android:textSize="30dp"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:id="@+id/Name2_EDT_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of games:"
+            android:textStyle="bold"
+            android:textColor="#ECE188"
+            android:textSize="30dp"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:id="@+id/Number_of_games_EDT_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginRight="5dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/start_BTN_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start play"
+        android:textSize="35dp"
+        android:textStyle="italic"
+        android:background="#6ADFD4"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#DC3D0B"/>
+
+
+</LinearLayout>
