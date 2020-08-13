@@ -32,7 +32,7 @@ public class home extends AppCompatActivity {
 
         //initialize values
         setValues();
-        loadGlide(img1_IV_home);
+        //loadGlide(img1_IV_home);
 
         start.setOnClickListener(new View.OnClickListener() {
 
@@ -71,12 +71,5 @@ public class home extends AppCompatActivity {
                 .placeholder(R.drawable.tic_tac_toe)
                 .diskCacheStrategy(DiskCacheStrategy.NONE)
                 .into(iv);
-    }
-
-    public int getImage(String imageName) {
-
-        int drawableResourceId = this.getResources().getIdentifier(imageName, "drawable", this.getPackageName());
-
-        return drawableResourceId;
     }
 }
