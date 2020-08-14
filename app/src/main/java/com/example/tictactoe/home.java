@@ -46,9 +46,11 @@ public class home extends AppCompatActivity {
     private void openActivityHome() {
 
         // extract data
-        String name1 = player1_name.getText().toString();
-        String name2 = player2_name.getText().toString();
-        int number = Integer.parseInt(numberOfGames.getText().toString());
+        String name1 = "", name2 = "";
+        int number = 1;
+        name1 = player1_name.getText().toString();
+        name2 = player2_name.getText().toString();
+        number = Integer.parseInt(numberOfGames.getText().toString());
 
         Intent intent = new Intent(this, MainActivity.class);
         intent.putExtra(EXTRA_TEXT1, name1);
@@ -67,7 +69,7 @@ public class home extends AppCompatActivity {
 
     private void loadGlide(ImageView iv) {
         Glide.with(home.this)
-                .load("")
+                .load("https://thumbs.gfycat.com/SolidTestyCockatoo-small.gif")
                 .placeholder(R.drawable.tic_tac_toe)
                 .diskCacheStrategy(DiskCacheStrategy.NONE)
                 .into(iv);
